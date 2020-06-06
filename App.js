@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, SafeAreaView, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, Image, SafeAreaView, ScrollView, TouchableOpacity } from 'react-native';
 import {NativeRouter, Switch, Route} from 'react-router-native'
 import Home from './Home'
 export default function App() {
@@ -14,39 +14,46 @@ export default function App() {
         <ScrollView>
           <View style={styles.menu}>
         <View style={styles.options}>
-              <Route exact path='/' component={Home}>
+        <TouchableOpacity>
                 <View style={styles.option}>
                 <Image style={styles.optionimage} source={require('./assets/clock.png')} />
                 <Text style={styles.optiontext}>timer</Text>
-                </View></Route>
-        <View style={styles.option}>
+                  </View></TouchableOpacity>
+        <TouchableOpacity> 
+                  <View style={styles.option}>
                 <Image style={styles.optionimage} source={require('./assets/history.png')} />
                 <Text style={styles.optiontext}>history</Text>
-        </View>
+                </View></TouchableOpacity>
         </View>
 
       <View style={styles.options}>
+                <TouchableOpacity> 
         <View style={styles.option}>
                 <Image style={styles.optionimage} source={require('./assets/group.png')} />
                 <Text style={styles.optiontext}>group</Text>
-        </View>
+                  </View></TouchableOpacity> 
+                <TouchableOpacity> 
         <View style={styles.option}>
                 <Image style={styles.optionimage} source={require('./assets/preferences.png')} />
                 <Text style={styles.optiontext}>preferences</Text>
-        </View>
+                  </View></TouchableOpacity> 
       </View>
 
       <View style={styles.options}>
+
+      <TouchableOpacity> 
         <View style={styles.optionlarge}>
                 <Image style={styles.optionimage} source={require('./assets/butterfly.png')} />
                 <Text style={styles.optiontext}>begin the 10 week process</Text>
-        </View>
+                  </View></TouchableOpacity> 
       </View>
       <View style={styles.options}>
-        <View style={styles.optionlarger}></View>
-      </View>
+                <TouchableOpacity> 
+        <View style={styles.optionlarger}></View></TouchableOpacity> 
+      </View> 
             <View style={styles.options}>
-              <View style={styles.optionlarger}></View>
+                <TouchableOpacity> 
+                  <View style={styles.optionlarger}></View></TouchableOpacity> 
             </View>
           </View>
         </ScrollView>
