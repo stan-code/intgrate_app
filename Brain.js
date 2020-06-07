@@ -10,7 +10,7 @@ export default function Brain() {
           <Text style={styles.title}>Reflect</Text>
 
           <Image style={styles.logo} source={require('./assets/yin.png')} /></View>
-          <Image style={styles.icon} source={require('./assets/breathe.png')} />
+          <Image style={styles.icon} source={require('./assets/brain.png')} />
 
           <View style={styles.menu}>
             <View style={styles.options}>

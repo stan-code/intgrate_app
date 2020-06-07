@@ -6,6 +6,7 @@ import Nav from './Nav'
 import Brain from './Brain'
 import Book from './Book'
 import Heart from './Heart'
+import Clock from './Clock'
 export default function App() {
   return (
     <NativeRouter>
@@ -15,6 +16,7 @@ export default function App() {
       <Route exact path="/brain" component={Brain} />
       <Route exact path="/book" component={Book} />
       <Route exact path="/heart" component={Heart} />
+        <Route exact path="/clock" component={Clock} />
       <Route path="/" component={Nav} />
       </View>
     

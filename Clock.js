@@ -2,60 +2,31 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, SafeAreaView, ScrollView, TouchableOpacity } from 'react-native';
 import { NativeRouter, Switch, Route } from 'react-router-native'
 
-export default function Breathe({ history }) {
+export default function Clock({ history }) {
   return (
     <View style={styles.container}>
       <SafeAreaView style={styles.container}>
         <ScrollView><View style={styles.header}>
-          <Text style={styles.title}>Share</Text>
+          <Text style={styles.title}>Timer</Text>
 
           <Image style={styles.logo} source={require('./assets/yin.png')} /></View>
-          <Image style={styles.icon} source={require('./assets/heart.png')} />
-
-          <View style={styles.menu}>
-            <View style={styles.options}>
-              <TouchableOpacity onPress={() => history.push('/timer')}>
-                <View style={styles.option}>
-                  <Image style={styles.optionimage} source={require('./assets/clock.png')} />
-                  <Text style={styles.optiontext}>timer</Text>
-                </View></TouchableOpacity>
-              <TouchableOpacity onPress={() => history.push('/history')}>
-                <View style={styles.option}>
-                  <Image style={styles.optionimage} source={require('./assets/history.png')} />
-                  <Text style={styles.optiontext}>history</Text>
-                </View></TouchableOpacity>
-            </View>
-
-            <View style={styles.options}>
-              <TouchableOpacity onPress={() => history.push('/group')}>
-                <View style={styles.option}>
-                  <Image style={styles.optionimage} source={require('./assets/group.png')} />
-                  <Text style={styles.optiontext}>group</Text>
-                </View></TouchableOpacity>
-              <TouchableOpacity onPress={() => history.push('/preferences')}>
-                <View style={styles.option}>
-                  <Image style={styles.optionimage} source={require('./assets/preferences.png')} />
-                  <Text style={styles.optiontext}>preferences</Text>
-                </View></TouchableOpacity>
-            </View>
-
-            <View style={styles.options}>
-
-              <TouchableOpacity onPress={() => history.push('/course')}>
-                <View style={styles.optionlarge}>
-                  <Image style={styles.optionimage} source={require('./assets/butterfly.png')} />
-                  <Text style={styles.optiontext}>begin the 10 week process</Text>
-                </View></TouchableOpacity>
-            </View>
-            <View style={styles.options}>
-              <TouchableOpacity>
-                <View style={styles.optionlarger}></View></TouchableOpacity>
-            </View>
-            <View style={styles.options}>
-              <TouchableOpacity>
-                <View style={styles.optionlarger}></View></TouchableOpacity>
-            </View>
+          <Image style={styles.icon} source={require('./assets/breathe.png')} />
+<View style={styles.menu}></View>
+          <View style={styles.options}>
+            <TouchableOpacity>
+              <View style={styles.optionlarger}></View></TouchableOpacity>
           </View>
+          <View style={styles.options}>
+            <TouchableOpacity>
+              <View style={styles.optionlarger}></View></TouchableOpacity>
+          </View>
+          <View style={styles.options}>
+            <TouchableOpacity>
+              <View style={styles.optionlarger}></View></TouchableOpacity>
+          </View>
+          
+         
+       
         </ScrollView>
       </SafeAreaView>
     </View>
@@ -169,8 +140,8 @@ const styles = StyleSheet.create({
     marginBottom: 7,
   },
   menu: {
-    marginTop: 30,
-    marginBottom: 100,
+    marginTop: 0,
+    marginBottom: 30,
   },
   navimage: {
     width: 30,

@@ -14,7 +14,7 @@ export default function Breathe({history}) {
 
           <View style={styles.menu}>
             <View style={styles.options}>
-              <TouchableOpacity onPress={() => history.push('/timer')}>
+              <TouchableOpacity onPress={() => history.push('/clock')}>
                 <View style={styles.option}>
                   <Image style={styles.optionimage} source={require('./assets/clock.png')} />
                   <Text style={styles.optiontext}>timer</Text>
