@@ -1,26 +1,34 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, SafeAreaView, ScrollView, TouchableOpacity } from 'react-native';
-import {NativeRouter, Switch, Route} from 'react-router-native'
-import Breathe from './Breathe'
-import Nav from './Nav'
-import Brain from './Brain'
-import Book from './Book'
-import Heart from './Heart'
-export default function App() {
+import { NativeRouter, Switch, Route } from 'react-router-native'
+
+export default function Nav({history}) {
   return (
-    <NativeRouter>
-      <View style={styles.container}>
-        <Route exact path="/" component={Breathe} />
-      <Route exact path="/breathe" component={Breathe} />
-      <Route exact path="/brain" component={Brain} />
-      <Route exact path="/book" component={Book} />
-      <Route exact path="/heart" component={Heart} />
-      <Route path="/" component={Nav} />
-      </View>
-    
-    </NativeRouter>
+
+
+<View style={styles.navbar}>
+
+  <TouchableOpacity onPress={() => history.push('/breathe')}>
+    <View style={styles.navPic}>
+      <Image style={styles.navimage} source={require('./assets/breathe.png')} /></View></TouchableOpacity>
+
+      <TouchableOpacity onPress={() => history.push('/brain')}>
+    <View style={styles.navPic}>
+      <Image style={styles.navimage} source={require('./assets/brain.png')} /></View></TouchableOpacity>
+
+      <TouchableOpacity onPress={() => history.push('/book')}>
+    <View style={styles.navPic}>
+      <Image style={styles.navimage} source={require('./assets/book.png')} /></View></TouchableOpacity>
+
+      <TouchableOpacity onPress={() => history.push('/heart')}>
+    <View style={styles.navPic}>
+      <Image style={styles.navimage} source={require('./assets/heart.png')} /></View></TouchableOpacity>
+
+</View>
+
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
@@ -28,11 +36,11 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
   },
   title: {
-color: 'white',
-fontSize: 60,
-textAlign: 'left',
-marginTop: 80,
-marginLeft: 20,
+    color: 'white',
+    fontSize: 60,
+    textAlign: 'left',
+    marginTop: 80,
+    marginLeft: 20,
 
 
   },
@@ -42,7 +50,7 @@ marginLeft: 20,
     marginTop: 80,
     marginLeft: 10,
     resizeMode: 'contain',
-    
+
   },
   icon: {
     width: 110,
@@ -65,13 +73,13 @@ marginLeft: 20,
     height: 100,
     position: 'absolute',
     bottom: 0,
-    
+
   },
   options: {
-display: 'flex',
-flexDirection: 'row',
-justifyContent: "center",
-alignContent: 'center',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: "center",
+    alignContent: 'center',
   },
   option: {
     display: 'flex',
@@ -127,8 +135,8 @@ alignContent: 'center',
     marginBottom: 7,
   },
   menu: {
-marginTop: 30,
-marginBottom: 100,
+    marginTop: 30,
+    marginBottom: 100,
   },
   navimage: {
     width: 30,
