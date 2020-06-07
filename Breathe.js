@@ -19,7 +19,7 @@ export default function Breathe({history}) {
                   <Image style={styles.optionimage} source={require('./assets/clock.png')} />
                   <Text style={styles.optiontext}>timer</Text>
                 </View></TouchableOpacity>
-              <TouchableOpacity onPress={() => history.push('/history')}>
+              <TouchableOpacity onPress={() => history.push('/breathe')}>
                 <View style={styles.option}>
                   <Image style={styles.optionimage} source={require('./assets/history.png')} />
                   <Text style={styles.optiontext}>history</Text>
@@ -27,12 +27,12 @@ export default function Breathe({history}) {
             </View>
 
             <View style={styles.options}>
-              <TouchableOpacity onPress={() => history.push('/group')}>
+              <TouchableOpacity onPress={() => history.push('/breathe')}>
                 <View style={styles.option}>
                   <Image style={styles.optionimage} source={require('./assets/group.png')} />
                   <Text style={styles.optiontext}>group</Text>
                 </View></TouchableOpacity>
-              <TouchableOpacity onPress={() => history.push('/preferences')}>
+              <TouchableOpacity onPress={() => history.push('/breathe')}>
                 <View style={styles.option}>
                   <Image style={styles.optionimage} source={require('./assets/preferences.png')} />
                   <Text style={styles.optiontext}>preferences</Text>
@@ -41,7 +41,7 @@ export default function Breathe({history}) {
 
             <View style={styles.options}>
 
-              <TouchableOpacity onPress={() => history.push('/course')}>
+              <TouchableOpacity onPress={() => history.push('/breathe')}>
                 <View style={styles.optionlarge}>
                   <Image style={styles.optionimage} source={require('./assets/butterfly.png')} />
                   <Text style={styles.optiontext}>begin the 10 week process</Text>

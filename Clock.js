@@ -1,32 +1,17 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, SafeAreaView, ScrollView, TouchableOpacity, Dimensions } from 'react-native';
+import { StyleSheet, Text, View, Image, Alert, SafeAreaView, ScrollView, TouchableOpacity, Dimensions } from 'react-native';
 import { NativeRouter, Switch, Route } from 'react-router-native'
+import Gong from './assets/gong.mp3'
+import { Howl, Howler} from 'howler'
+
+
 
 var time = 10
+
+
 export default class Clock extends React.Component {
-  constructor(props){
-    super(props);
+ 
 
-    this.state={
-      time: 10
-    }
-  
-
-
-  setInterval(() => {
-    this.timer()
-    this.setState({
-      time: this.state.time -1
-    })
-  }, 1000)
-
-}
-
-timer(){
-  if ( this.state.time == 0){
-    this.setState({time: 100})
-  }
-}
   render() {
   return (
     <View style={styles.container}>
@@ -37,7 +22,6 @@ timer(){
           <Image style={styles.logo} source={require('./assets/yin.png')} /></View>
           <Image style={styles.icon} source={require('./assets/breathe.png')} />
 <View style={styles.menu}></View>
-          <Text style={styles.title}>{this.state.time}min</Text>
           <View style={styles.options}>
            
             <TouchableOpacity>

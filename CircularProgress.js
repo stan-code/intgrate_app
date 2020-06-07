@@ -9,3 +9,4 @@ const { width } = Dimensions.get("window")
 const size = width - 32
 const strokeWidth = 50
 const radius = (size - strokeWidth) / 2
+
