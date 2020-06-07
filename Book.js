@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, SafeAreaView, ScrollView, TouchableOpacity } from 'react-native';
 import { NativeRouter, Switch, Route } from 'react-router-native'
 
+
 export default function Breathe({ history }) {
   return (
     <View style={styles.container}>
