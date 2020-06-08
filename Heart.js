@@ -73,15 +73,13 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 60,
     textAlign: 'left',
-    marginTop: 80,
+    marginTop: 30,
     marginLeft: 20,
-
-
   },
   logo: {
     width: 70,
     height: 70,
-    marginTop: 80,
+    marginTop: 30,
     marginLeft: 10,
     resizeMode: 'contain',
 

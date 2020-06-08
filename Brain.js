@@ -12,50 +12,7 @@ export default function Brain() {
           <Image style={styles.logo} source={require('./assets/yin.png')} /></View>
           <Image style={styles.icon} source={require('./assets/brain.png')} />
 
-          <View style={styles.menu}>
-            <View style={styles.options}>
-              <TouchableOpacity>
-                <View style={styles.option}>
-                  <Image style={styles.optionimage} source={require('./assets/clock.png')} />
-                  <Text style={styles.optiontext}>timer</Text>
-                </View></TouchableOpacity>
-              <TouchableOpacity>
-                <View style={styles.option}>
-                  <Image style={styles.optionimage} source={require('./assets/history.png')} />
-                  <Text style={styles.optiontext}>history</Text>
-                </View></TouchableOpacity>
-            </View>
-
-            <View style={styles.options}>
-              <TouchableOpacity>
-                <View style={styles.option}>
-                  <Image style={styles.optionimage} source={require('./assets/group.png')} />
-                  <Text style={styles.optiontext}>group</Text>
-                </View></TouchableOpacity>
-              <TouchableOpacity>
-                <View style={styles.option}>
-                  <Image style={styles.optionimage} source={require('./assets/preferences.png')} />
-                  <Text style={styles.optiontext}>preferences</Text>
-                </View></TouchableOpacity>
-            </View>
-
-            <View style={styles.options}>
-
-              <TouchableOpacity>
-                <View style={styles.optionlarge}>
-                  <Image style={styles.optionimage} source={require('./assets/butterfly.png')} />
-                  <Text style={styles.optiontext}>begin the 10 week process</Text>
-                </View></TouchableOpacity>
-            </View>
-            <View style={styles.options}>
-              <TouchableOpacity>
-                <View style={styles.optionlarger}></View></TouchableOpacity>
-            </View>
-            <View style={styles.options}>
-              <TouchableOpacity>
-                <View style={styles.optionlarger}></View></TouchableOpacity>
-            </View>
-          </View>
+          
         </ScrollView>
       </SafeAreaView>
     </View>
@@ -68,20 +25,19 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: 'black',
     flexDirection: 'column',
+    height: 815
   },
   title: {
     color: 'white',
     fontSize: 60,
     textAlign: 'left',
-    marginTop: 80,
+    marginTop: 30,
     marginLeft: 20,
-
-
   },
   logo: {
     width: 70,
     height: 70,
-    marginTop: 80,
+    marginTop: 30,
     marginLeft: 10,
     resizeMode: 'contain',
 

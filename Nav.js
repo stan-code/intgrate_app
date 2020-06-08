@@ -66,12 +66,12 @@ const styles = StyleSheet.create({
   navbar: {
     display: 'flex',
     flexDirection: 'row',
-    flex: 2,
     justifyContent: 'space-evenly',
-    backgroundColor: 'rgba(0, 0, 0, 0.50)',
+    backgroundColor: 'black',
     width: 380,
     height: 100,
     position: 'absolute',
+    left: 0,
     bottom: 0,
 
   },

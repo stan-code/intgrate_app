@@ -49,11 +49,11 @@ export default function Breathe({history}) {
             </View>
             <View style={styles.options}>
               <TouchableOpacity>
-                <View style={styles.optionlarger}></View></TouchableOpacity>
+                <View style={styles.optionlarger}><Image style={styles.optionimagelarge} source={require('./assets/stock.png')} /><View style={styles.largetextbox}><Text style={styles.optionlargetext}>What is breathwork?</Text></View></View></TouchableOpacity>
             </View>
             <View style={styles.options}>
               <TouchableOpacity>
-                <View style={styles.optionlarger}></View></TouchableOpacity>
+                <View style={styles.optionlarger}><View style={styles.largetextbox}><Text style={styles.optionlargetext}>Beginners walkthrough</Text></View><Image style={styles.optionimagelarge2} source={require('./assets/stock2.png')} /></View></TouchableOpacity>
             </View>
           </View>
         </ScrollView>
@@ -68,12 +68,13 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: 'black',
     flexDirection: 'column',
+    height: 815,
   },
   title: {
     color: 'white',
     fontSize: 60,
     textAlign: 'left',
-    marginTop: 80,
+    marginTop: 30,
     marginLeft: 20,
 
 
@@ -81,7 +82,7 @@ const styles = StyleSheet.create({
   logo: {
     width: 70,
     height: 70,
-    marginTop: 80,
+    marginTop: 30,
     marginLeft: 10,
     resizeMode: 'contain',
 
@@ -102,13 +103,18 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flex: 2,
     justifyContent: 'space-evenly',
-    backgroundColor: 'rgba(0, 0, 0, 0.50)',
+    backgroundColor: 'black',
     width: 380,
     height: 100,
     position: 'absolute',
     bottom: 0,
 
   },
+  largetextbox:{
+    width: 150,
+    marginLeft: 10,
+  },
+
   options: {
     display: 'flex',
     flexDirection: 'row',
@@ -134,11 +140,29 @@ const styles = StyleSheet.create({
     height: 50,
     resizeMode: 'contain'
   },
+  optionimagelarge: {
+    width: 150,
+    height: 180,
+    marginLeft: 10,
+    resizeMode: 'contain',
+  },
+  optionimagelarge2: {
+    width: 150,
+    height: 180,
+    marginRight: 10,
+    resizeMode: 'contain',
+  },
+  optionlargetext: {
+    color: 'white',
+    fontSize: 25,
+  },
   optiontext: {
     color: 'white',
     marginTop: 10,
     fontFamily: 'Helvetica Neue',
-    fontSize: 15
+    display: 'flex',
+    flexWrap: 'wrap'
+    
   },
   optionlarge: {
     display: 'flex',
@@ -156,7 +180,7 @@ const styles = StyleSheet.create({
   },
   optionlarger: {
     display: 'flex',
-    flexDirection: 'column',
+    flexDirection: 'row',
     justifyContent: 'space-evenly',
     alignItems: 'center',
     backgroundColor: '#121212',
